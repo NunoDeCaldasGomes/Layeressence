@@ -53,7 +53,6 @@
     }
 }
 
-/* Effet de fondu aux bords */
 .carousel-container::before,
 .carousel-container::after {
     content: "";
@@ -195,4 +194,5 @@ fieldset:hover{
 
 footer:hover{
     color:var(--quarter-color);
+
 }
