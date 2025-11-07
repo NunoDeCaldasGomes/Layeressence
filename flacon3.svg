@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Capuchon noir mat - forme géométrique -->
+    <path d="M75 20 L125 20 L115 80 L85 80 Z" fill="#1a1a1a"/>
+    
+    <!-- Col du flacon -->
+    <rect x="85" y="80" width="30" height="20" fill="#6b1021"/>
+    
+    <!-- Corps du flacon - forme angulaire -->
+    <path d="M45 100 L65 250 C65 275 135 275 135 250 L155 100 C155 90 45 90 45 100" fill="#6b1021"/>
+    
+    <!-- Reflet -->
+    <path d="M60 110 L75 240 C75 260 95 260 95 240 L110 110" fill="#ffffff20" opacity="0.2"/>
+    
+    <!-- Base du flacon -->
+    <path d="M65 250 C65 275 135 275 135 250" fill="#4a0b17"/>
+</svg>

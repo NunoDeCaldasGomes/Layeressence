@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff9fb"/>
+      <stop offset="100%" stop-color="#fff0f6"/>
+    </linearGradient>
+    <filter id="shadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#fff8fb"/>
+  <!-- Bottle -->
+  <g transform="translate(150,60)" filter="url(#shadow3)">
+    <rect x="60" y="80" rx="36" ry="36" width="220" height="440" fill="url(#g3)" stroke="#5a2b4a" stroke-width="2"/>
+    <rect x="110" y="30" rx="20" ry="20" width="120" height="60" fill="#5a2b4a"/>
+    <rect x="130" y="16" rx="6" ry="6" width="80" height="20" fill="#8c4766"/>
+    <!-- Label -->
+    <rect x="100" y="220" rx="12" ry="12" width="160" height="120" fill="#fff" opacity="0.95"/>
+    <text x="180" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#5a2b4a">Parfum 3</text>
+    <text x="180" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Bergamote · Rose · Patchouli</text>
+  </g>
+  <!-- Decorative props -->
+  <g opacity="0.9">
+    <rect x="420" y="680" width="100" height="14" rx="7" fill="#f3e1ea"/>
+  </g>
+</svg>
