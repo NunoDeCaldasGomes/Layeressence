@@ -6,6 +6,13 @@
     --font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
 
 .carousel-container {
     width: 100%;
@@ -75,12 +82,7 @@
 }
 
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    text-align: center;
-}
+
 
 header {
     background-color: var(--primary-color);
@@ -196,3 +198,4 @@ footer:hover{
     color:var(--quarter-color);
 
 }
+
