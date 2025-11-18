@@ -3,54 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Layeressence</title>
+        <title>Layeressence — Parfums de niche</title>
+        <meta name="description" content="Layeressence, e‑commerce de parfums de niche fondé sur le layering.">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <header class="site-header">
             <div class="logo-container">
-                <img src="logo.svg" alt="Layeressence - L'art du parfum superposé" class="site-logo">
+                <img src="images/logo.svg" alt="Layeressence - L'art du parfum superposé" class="site-logo">
             </div>
-            <div class="container">
-                <div class="header-icons">
-                    <nav>
-                        <a href="#apropos">À propos</a>
-                        <a href="#nosproduits">Nos Produits</a>
-                        <a href="index.html" class="cart-icon active" style="color: white;"><i class="fas fa-shopping-cart"></i><span class="cart-count" style="color: white;">0</span></a>
-                    </nav>
-                </div>
-            </div>
-        </header>   
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="#apropos">À propos</a>
+                <a href="#nosproduits">Nos Produits</a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </nav>
+        </header> 
         <main>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <img src="flacon1.svg" alt="Flacon de parfum bordeaux classique">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon2.svg" alt="Flacon de parfum bordeaux élancé">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon3.svg" alt="Flacon de parfum bordeaux angulaire">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon4.svg" alt="Flacon de parfum bordeaux arrondi">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon1.svg" alt="Flacon de parfum bordeaux classique">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon2.svg" alt="Flacon de parfum bordeaux élancé">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon3.svg" alt="Flacon de parfum bordeaux angulaire">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="flacon4.svg" alt="Flacon de parfum bordeaux arrondi">
+            <section id="hero">
+                <h1>Parfums de niche conçus pour le layering</h1>
+                <p>Créez vos associations uniques et révélez votre style.</p>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="images/flacon1.svg" alt="Flacon de parfum bordeaux classique">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/flacon2.svg" alt="Flacon de parfum bordeaux élancé">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/flacon3.svg" alt="Flacon de parfum bordeaux angulaire">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/flacon4.svg" alt="Flacon de parfum bordeaux arrondi">
+                        </div>
                     </div>
                 </div>
-            </div>
+                <p style="margin-top:12px;">
+                    <a href="#nosproduits" class="btn btn-primary">Découvrir nos produits</a>
+                </p>
+            </section>
+        </main>
             <section class="page" id="apropos">
                 <fieldset>
                     <h2>À propos de nous</h2>
@@ -65,34 +58,16 @@
                 <fieldset>            
                     <h2>Nos Produits</h2>
                     <p>Découvrez notre gamme unique de parfums conçus pour être superposés selon vos préférences.</p>
-                    <div class="card">
-                        <article class="parfum" class="card">
-                            <img class="perfume-image" src="parfum1.svg" alt="Parfum 1">
-                            <h3>Parfum 1</h3>
-                            <p>Notes de tête: Agrumes, Notes de cœur: Lavande, Notes de fond: Bois de santal</p>
-                        </article>
-                        <article class="parfum">
-                            <img class="perfume-image" src="parfum2.svg" alt="Parfum 2">
-                            <h3>Parfum 2</h3>
-                            <p>Notes de tête: Menthe, Notes de cœur: Jasmin, Notes de fond: Musc</p>
-                        </article>
-                        <article class="parfum">
-                            <img class="perfume-image" src="parfum3.svg" alt="Parfum 3">
-                            <h3>Parfum 3</h3>
-                            <p>Notes de tête: Bergamote, Notes de cœur: Rose, Notes de fond: Patchouli</p>
-                        </article>
+                    <div id="product-grid" class="card" aria-live="polite">
                     </div>
                 </fieldset>
             </section>
-        </main>
+        
         <footer>
             <p>&copy; 2025 Layeressence. Tous droits réservés.</p>
             <p>&copy; De Caldas Gomes Nuno Miguel. Tous droits réservés.</p>
         </footer>
+
+        <script src="app.js" defer></script>
     </body>
-
 </html>
-
-
-
-
