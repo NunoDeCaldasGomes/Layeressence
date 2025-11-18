@@ -140,7 +140,7 @@ fieldset {
 }
 fieldset:hover{
     background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    color: var(--quarter-color);
     border-color: var(--quarter-color);
 }
 .card {
@@ -215,5 +215,6 @@ fieldset:hover{
 .parfum:hover strong {
     color: var(--quarter-color);
 }
+
 
 
