@@ -162,7 +162,7 @@ fieldset:hover{
     border: 1px solid var(--primary-color);
     text-align: center;
 }
-.parfum h3 { margin: 8px 0;}
+.parfum h3 { margin: 8px 0; }
 
 
 .perfume-image {
@@ -205,4 +205,15 @@ fieldset:hover{
     background: linear-gradient(180deg, #a4131b 0%, #7a0e13 100%);
     border-color: #7a0e13;
 }
+.parfum:hover {
+    background-color: var(--primary-color);
+    color: var(--quarter-color);
+    border-color: var(--quarter-color);
+}
+.parfum:hover h3,
+.parfum:hover p,
+.parfum:hover strong {
+    color: var(--quarter-color);
+}
+
 
