@@ -140,7 +140,7 @@ fieldset {
 }
 fieldset:hover{
     background-color: var(--primary-color);
-    color: var(--quarter-color);
+    color: var(--tertiary-color);
     border-color: var(--quarter-color);
 }
 .card {
@@ -205,3 +205,4 @@ fieldset:hover{
     background: linear-gradient(180deg, #a4131b 0%, #7a0e13 100%);
     border-color: #7a0e13;
 }
+
