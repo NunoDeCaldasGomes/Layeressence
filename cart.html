@@ -11,7 +11,7 @@
         <header class="site-header">
             <div class="logo-container">
                 <a href="index.html" aria-label="Retour à l'accueil">
-                    <img src="logo.svg" alt="Layeressence - L'art du parfum superposé" class="site-logo">
+                    <img src="images/logo.svg" alt="Layeressence - L'art du parfum superposé" class="site-logo">
                 </a>
             </div>
             <nav class="main-nav" aria-label="Navigation principale">
@@ -23,14 +23,35 @@
                 </a>
             </nav>
         </header>
-        
         <main>
             <section class="page">
                 <fieldset>
                     <h2>Mon Panier</h2>
                     <div id="cart-items" class="card">
-                      
+                        <div class="cart-item">
+                            <img src="images/parfum1.jpg" alt="Parfum 1" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-name">Parfum 1</h3>
+                                <p class="cart-item-price">199,99€</p>
+                                <div class="cart-item-quantity">
+                                    <label for="quantity1">Quantité:</label>
+                                    <input type="number" id="quantity1" value="1" min="1" max="10" aria-label="Quantité de Parfum 1">
+                                </div>
+                            </div>
+                            <button class="btn btn-danger cart-item-remove">Supprimer</button>
+                        </div>
                     </div>
                     <div class="cart-summary">
                         <p>Total: <strong id="cart-total">0€</strong></p>
-                        <button id="clear-cart" class="btn">Vider le panier</button>
+                        <button id="clear-cart" class="btn btn-danger">Vider le panier</button>
+                        <button id="checkout" class="btn btn-primary">Passer la commande</button>
+                    </div>
+                </fieldset>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Layeressence. Tous droits réservés.</p>
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>
