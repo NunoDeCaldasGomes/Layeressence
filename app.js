@@ -1,4 +1,3 @@
-
 const products = [
   { id: 'p1', name: 'Parfum 1', price: 79, image: 'parfum1.svg', desc: 'Agrumes, Lavande, Bois de santal' },
   { id: 'p2', name: 'Parfum 2', price: 89, image: 'parfum2.svg', desc: 'Menthe, Jasmin, Musc' },
@@ -115,6 +114,7 @@ function renderCartPage() {
   const totalEl = document.getElementById('cart-total');
   if (totalEl) totalEl.textContent = formatPrice(total);
 
+
   container.querySelectorAll('input[type="number"]').forEach(input => {
     input.addEventListener('change', (e) => {
       const parent = e.target.closest('.parfum');
@@ -131,3 +131,23 @@ function renderCartPage() {
     });
   });
 }
+
+function bindCartActions() {
+    const clearBtn = document.getElementById('clear-cart');
+    if (clearBtn) clearBtn.addEventListener('click', () => {
+        clearCart();
+    });
+
+    const checkoutBtn = document.getElementById('checkout');
+    if (checkoutBtn) checkoutBtn.addEventListener('click', () => {
+        alert('Merci pour votre commande ! (démo)');
+        clearCart();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateCartCount();
+    renderCatalog();
+    renderCartPage();
+    bindCartActions();
+});
