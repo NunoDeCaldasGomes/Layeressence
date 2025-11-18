@@ -1,8 +1,8 @@
 
 const products = [
-  { id: 'p1', name: 'Parfum 1', price: 79, image: 'images/parfum1.svg', desc: 'Agrumes, Lavande, Bois de santal' },
-  { id: 'p2', name: 'Parfum 2', price: 89, image: 'images/parfum2.svg', desc: 'Menthe, Jasmin, Musc' },
-  { id: 'p3', name: 'Parfum 3', price: 99, image: 'images/parfum3.svg', desc: 'Bergamote, Rose, Patchouli' }
+  { id: 'p1', name: 'Parfum 1', price: 79, image: 'parfum1.svg', desc: 'Agrumes, Lavande, Bois de santal' },
+  { id: 'p2', name: 'Parfum 2', price: 89, image: 'parfum2.svg', desc: 'Menthe, Jasmin, Musc' },
+  { id: 'p3', name: 'Parfum 3', price: 99, image: 'parfum3.svg', desc: 'Bergamote, Rose, Patchouli' }
 ];
 
 const CART_KEY = 'layeressence_cart';
